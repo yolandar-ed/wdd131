@@ -1,62 +1,66 @@
+@media (min-width: 768px) {
 
-.menu-toggle {
-    display: none;
-}
-
-
-.nav-links {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    width: auto;
-    background-color: transparent;
-    padding: 0;
-    box-shadow: none;
-    gap: 0.5rem;
-}
-
-.nav-links li {
-    width: auto;
-}
-
-.nav-links a {
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.95rem;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-}
+    .menu-toggle {
+        display: none;
+    }
 
 
-main {
-    max-width: 1100px;
-    padding: 2.5rem 1.5rem;
-}
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        gap: 0.5rem;
+    }
 
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
-}
+    .nav-links li {
+        width: auto;
+    }
 
-.album-grid {
-    max-width: none;
-    margin: 0;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
+    .nav-links a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-size: 0.95rem;
+    }
 
-.album-item {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+    .nav-links a:hover,
+    .nav-links a:focus {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
 
-.album-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+    main {
+        max-width: 1100px;
+        padding: 2.5rem 1.5rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .album-grid {
+        max-width: none;
+        margin: 0;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+
+    .album-item {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .album-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
 }
