@@ -50,17 +50,6 @@ body {
 }
 
 
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 26px;
-    height: 18px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
 
 .menu-toggle {
     display: flex;
