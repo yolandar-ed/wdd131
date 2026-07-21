@@ -1,0 +1,88 @@
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yolanda Rodriguez">
+    <meta name="description" content="Welcome to El Salvador - the Pulgarcito of Central America. Explore its weather, culture, and national parks.">
+    <title>El Salvador — The Pulgarcito of Central America</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Quicksand:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer=""></script>
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner glass-panel">
+            <h1 class="site-title">El Salvador</h1>
+            <p class="site-tagline">The Pulgarcito of Central America</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" aria-label="Pupusas, volcanoes, and beaches in El Salvador">
+            <div class="hero-image-wrapper">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/pupusasweb.webp">
+                    <source media="(max-width: 768px)" srcset="images/pupusasweb.webp">
+                    <source media="(min-width: 769px)" srcset="images/pupusasweb.webp">
+                    <img src="images/pupusasweb.webp" alt="Pupusas in El Salvador" class="hero-image" loading="eager">
+                </picture>
+                
+                <div class="hero-overlay glass-panel">
+                    <h2 class="hero-title">Explore El Salvador</h2>
+                    <p class="hero-sub">Food · Culture · Nature</p>
+                </div>
+
+                <section class="info-section glass-panel" aria-labelledby="info-heading">
+                    <h2 id="info-heading" class="section-heading">Data</h2>
+                    <dl class="info-grid">
+                        <div class="info-item"><dt>Area:</dt><dd>21,041 km²</dd></div>
+                        <div class="info-item"><dt>Population:</dt><dd>~ 6.4 million</dd></div>
+                        <div class="info-item"><dt>Capital:</dt><dd>San Salvador</dd></div>
+                        <div class="info-item"><dt>Languages:</dt><dd>Spanish</dd></div>
+                        <div class="info-item"><dt>Currency:</dt><dd>US Dollar (USD)</dd></div>
+                        <div class="info-item"><dt>Time Zone:</dt><dd>UTC+2 (CST)</dd></div>
+                        <div class="info-item"><dt>Calling Code:</dt><dd>+503</dd></div>
+                        <div class="info-item"><dt>Internet TLD:</dt><dd>.sv</dd></div>
+                    </dl>
+                </section>
+
+                <section class="weather-section glass-panel" aria-labelledby="weather-heading">
+                    <h2 id="weather-heading" class="section-heading">
+                        <span>Weather</span>
+                        <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-svg-icon" width="48" height="48">
+                    </h2>
+                    <div class="weather-grid">
+                        <dl class="weather-details">
+                            <div class="weather-item">
+                                <dt>Temperature</dt>
+                                <dd id="temperature">33 °C</dd>
+                            </div>
+                            <div class="weather-item">
+                                <dt>Conditions</dt>
+                                <dd id="conditions">Mostly Cloudy</dd>
+                            </div>
+                            <div class="weather-item">
+                                <dt>Wind</dt>
+                                <dd id="wind-speed">5 km/h</dd>
+                            </div>
+                            <div class="weather-item">
+                                <dt>Humidity</dt>
+                                <dd id="humidity">72%</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+        <p>©<span id="currentyear"></span> 🌟 Yolanda Rodriguez 🌟 El Salvador</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+</footer> 
